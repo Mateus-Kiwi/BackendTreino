@@ -43,6 +43,26 @@ namespace BackEndTreino.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ImgUrl = "https://cms-cdn.thesolesupplier.co.uk/2022/03/aj61.jpg.webp",
+                            Name = "Footwear"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ImgUrl = "https://www.realmenrealstyle.com/wp-content/uploads/2023/04/cargo_pants_lower_shot.jpg",
+                            Name = "Pants"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ImgUrl = "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/adidas-hat-size-masthead-c_221-990759.jpg",
+                            Name = "Hats"
+                        });
                 });
 
             modelBuilder.Entity("BackEndTreino.Models.Product", b =>

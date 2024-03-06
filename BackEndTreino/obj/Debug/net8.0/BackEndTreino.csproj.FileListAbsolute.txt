@@ -103,3 +103,4 @@ C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.pdb
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.genruntimeconfig.cache
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\ref\BackEndTreino.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.sourcelink.json
