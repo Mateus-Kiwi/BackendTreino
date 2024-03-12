@@ -21,3 +21,4 @@ namespace BackEndTreino.Models
         public ICollection<Product>? Products { get; set; }
     }
 }
+ 
