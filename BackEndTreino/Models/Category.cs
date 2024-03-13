@@ -5,20 +5,16 @@ namespace BackEndTreino.Models
 {
     public class Category
     {
-        public Category()
-        {
-            Products = new Collection<Product>();
-        }
 
         public int Id { get; set; }
         [Required]
         [StringLength(80)]
-        public string? Name { get; set; }
-        [Required]
+        public string Name { get; set; }
+        
         [StringLength(250)]
-        public string? ImgUrl { get; set; }
+        public string? CategoryImgUrl { get; set; }
 
-        public ICollection<Product>? Products { get; set; }
+        public ICollection<Product>? Products { get; set; } = [];
     }
 }
  

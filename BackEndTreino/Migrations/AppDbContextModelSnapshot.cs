@@ -47,8 +47,7 @@ namespace BackEndTreino.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ImgUrl")
-                        .IsRequired()
+                    b.Property<string>("CategoryImgUrl")
                         .HasMaxLength(250)
                         .HasColumnType("character varying(250)");
 
@@ -65,19 +64,19 @@ namespace BackEndTreino.Migrations
                         new
                         {
                             Id = 1,
-                            ImgUrl = "https://cms-cdn.thesolesupplier.co.uk/2022/03/aj61.jpg.webp",
+                            CategoryImgUrl = "https://cms-cdn.thesolesupplier.co.uk/2022/03/aj61.jpg.webp",
                             Name = "Footwear"
                         },
                         new
                         {
                             Id = 2,
-                            ImgUrl = "https://www.realmenrealstyle.com/wp-content/uploads/2023/04/cargo_pants_lower_shot.jpg",
+                            CategoryImgUrl = "https://www.realmenrealstyle.com/wp-content/uploads/2023/04/cargo_pants_lower_shot.jpg",
                             Name = "Pants"
                         },
                         new
                         {
                             Id = 3,
-                            ImgUrl = "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/adidas-hat-size-masthead-c_221-990759.jpg",
+                            CategoryImgUrl = "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/adidas-hat-size-masthead-c_221-990759.jpg",
                             Name = "Hats"
                         });
                 });
@@ -94,15 +93,12 @@ namespace BackEndTreino.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("BrandName")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("character varying(80)");
+                        .HasColumnType("text");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("integer");
 
                     b.Property<string>("CategoryName")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
@@ -131,6 +127,8 @@ namespace BackEndTreino.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BrandId");
+
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
@@ -138,13 +136,26 @@ namespace BackEndTreino.Migrations
 
             modelBuilder.Entity("BackEndTreino.Models.Product", b =>
                 {
+                    b.HasOne("BackEndTreino.Models.Brand", "Brand")
+                        .WithMany("Products")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BackEndTreino.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Brand");
+
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("BackEndTreino.Models.Brand", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("BackEndTreino.Models.Category", b =>

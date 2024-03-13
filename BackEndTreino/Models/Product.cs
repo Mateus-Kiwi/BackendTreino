@@ -25,25 +25,23 @@ namespace BackEndTreino.Models
         [StringLength(300)]
         public string? ImgUrl { get; set; }
 
-        //[Required]
-        //[StringLength(80)]
-        //public string BrandName { get; set; }
+        
+        public string? BrandName { get; set; }
 
-        //[Required]
-        //public int BrandId { get; set; }
-        [Required]
-        public Brand Brand { get; set; }
+
+        public required int BrandId { get; set; }
+        [JsonIgnore]
+        public Brand? Brand { get; set; }
+
         public float Inventory { get; set; }
 
-        public DateTime CreatedAt  { get; set; }
+        public DateTime CreatedAt  { get; set; } = DateTime.UtcNow;
+        
+        public string? CategoryName { get; set; }
 
-        [Range(1, 3)]
-        public int CategoryId { get; set; }
-
+        public required int CategoryId { get; set; }
         [JsonIgnore]
         public Category? Category { get; set; }
 
-        [Required]
-        public string CategoryName { get; set; }
     }
 }
