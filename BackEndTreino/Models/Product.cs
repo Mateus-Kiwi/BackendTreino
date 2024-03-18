@@ -25,9 +25,6 @@ namespace BackEndTreino.Models
         [StringLength(300)]
         public string? ImgUrl { get; set; }
 
-        
-        public string? BrandName { get; set; }
-
 
         public required int BrandId { get; set; }
         [JsonIgnore]
@@ -37,7 +34,7 @@ namespace BackEndTreino.Models
 
         public DateTime CreatedAt  { get; set; } = DateTime.UtcNow;
         
-        public string? CategoryName { get; set; }
+
 
         public required int CategoryId { get; set; }
         [JsonIgnore]

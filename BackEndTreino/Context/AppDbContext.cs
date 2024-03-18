@@ -1,4 +1,5 @@
-﻿using BackEndTreino.Models;
+﻿using BackEndTreino.EntityConfiguration;
+using BackEndTreino.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
 
@@ -13,6 +14,7 @@ namespace BackEndTreino.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new ProductConfig());
             // Adiciona os dados iniciais diretamente no método OnModelCreating
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "Footwear", CategoryImgUrl = "https://cms-cdn.thesolesupplier.co.uk/2022/03/aj61.jpg.webp" },

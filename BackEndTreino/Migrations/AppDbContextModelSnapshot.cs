@@ -92,14 +92,8 @@ namespace BackEndTreino.Migrations
                     b.Property<int>("BrandId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("BrandName")
-                        .HasColumnType("text");
-
                     b.Property<int>("CategoryId")
                         .HasColumnType("integer");
-
-                    b.Property<string>("CategoryName")
-                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -123,6 +117,7 @@ namespace BackEndTreino.Migrations
                         .HasColumnType("character varying(80)");
 
                     b.Property<decimal>("Price")
+                        .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
 
                     b.HasKey("Id");

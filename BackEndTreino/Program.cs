@@ -2,6 +2,8 @@ using BackEndTreino.Context;
 using BackEndTreino.Extensions;
 using BackEndTreino.Filters;
 using BackEndTreino.Mappings;
+using BackEndTreino.ReposImpl;
+using BackEndTreino.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Text.Json.Serialization;
@@ -15,7 +17,8 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(DomainToDTO));
-
+builder.Services.AddScoped<IProductRepo, ProductRepo>();
+builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
 
 var configuration = builder.Configuration;
 
