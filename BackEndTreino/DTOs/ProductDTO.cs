@@ -7,29 +7,19 @@ namespace BackEndTreino.DTOs
 {
     public record ProductDTO
     (
-        [Required]
-        [StringLength(80)]
-         string? Name,
 
-        [Required]
-        [StringLength(300)]
-         string? Description,
+        string? Name,
 
-        [Required]
-        
-         decimal Price,
+        string? Description,
 
-        [Required]
-        [StringLength(300)]
-         string? ImgUrl,
+        decimal Price,
 
-         float Inventory,
+        string? ImgUrl,
 
-        [Required]
+        float Inventory,
+
         int CategoryId,
 
-
-        [Required]
         int BrandId
     );
 }

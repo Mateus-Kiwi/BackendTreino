@@ -55,17 +55,17 @@ namespace BackEndTreino.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCategory(int id, CategoryDTO categoryDTO)
+        public async Task<IActionResult> PutCategory(int id, Category category)
         {
-            var updatedCategory = await _categoryRepo.Put(id, categoryDTO);
+            var updatedCategory = await _categoryRepo.Put(id, category);
             return Ok(updatedCategory);
         }
 
 
         [HttpPost]
-        public async Task<ActionResult<CategoryDTO>> PostCategory(CategoryDTO categoryDTO)
+        public async Task<ActionResult<CategoryDTO>> PostCategory(Category category)
         {
-            var newCategory = await _categoryRepo.Post(categoryDTO);  
+            var newCategory = await _categoryRepo.Post(category);  
             return Ok(newCategory);
         }
 

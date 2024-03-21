@@ -10,6 +10,7 @@ using BackEndTreino.Models;
 using BackEndTreino.DTOs;
 using AutoMapper;
 using BackEndTreino.Repositories;
+using BackEndTreino.ReposImpl;
 
 namespace BackEndTreino.Controllers
 {
@@ -38,76 +39,34 @@ namespace BackEndTreino.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Brand>> GetBrand(int id)
         {
-            var brand = await _context.Brands.FindAsync(id);
-
-            if (brand == null)
-            {
-                return NotFound();
-            }
-
-            return brand;
+            var brands = await _brandRepo.GetById(id);
+            return Ok(brands);
         }
 
-        // PUT: api/Brands/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBrand(int id, Brand brand)
         {
-            if (id != brand.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(brand).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BrandExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            var updatedProduct = await _brandRepo.Put(id, brand);
+            return Ok(updatedProduct);
         }
-
 
         [HttpPost]
-        public async Task<IActionResult> PostBrand(BrandDTO brandDTO)
+        public async Task<IActionResult> PostBrand(Brand brand)
         {
-            var brand = _mapper.Map<Brand>(brandDTO);
-            _context.Brands.Add(brand);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction("GetBrand", new { id = brand.Id }, brand);
+            var newBrand = await _brandRepo.Post(brand);
+            return Ok(newBrand);
         }
 
-        // DELETE: api/Brands/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBrand(int id)
         {
-            var brand = await _context.Brands.FindAsync(id);
-            if (brand == null)
-            {
-                return NotFound();
-            }
-
-            _context.Brands.Remove(brand);
-            await _context.SaveChangesAsync();
-
+            await _brandRepo.Delete(id);
             return NoContent();
         }
 
-        private bool BrandExists(int id)
-        {
-            return _context.Brands.Any(e => e.Id == id);
-        }
+        //private bool BrandExists(int id)
+        //{
+        //    return _context.Brands.Any(e => e.Id == id);
+        //}
     }
 }

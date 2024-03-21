@@ -44,16 +44,16 @@ namespace BackEndTreino.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostProduct(ProductDTO productDTO)
+        public async Task<IActionResult> PostProduct(Product product)
         {
-            var newProduct =  await _productRepo.Post(productDTO);
+            var newProduct =  await _productRepo.Post(product);
             return Ok(newProduct);
         }
 
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> PutProduct(int id, ProductDTO productDTO)
+        public async Task<IActionResult> PutProduct(int id, Product product)
         {
-                var updatedProduct = await _productRepo.Put(id, productDTO);
+                var updatedProduct = await _productRepo.Put(id, product);
                 return Ok(updatedProduct);
         }
 
