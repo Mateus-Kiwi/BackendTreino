@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj": {}
+    "E:\\Code\\Github\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj": {
+    "E:\\Code\\Github\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj",
+        "projectUniqueName": "E:\\Code\\Github\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj",
         "projectName": "BackEndTreino",
-        "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj",
-        "packagesPath": "C:\\Users\\mateus.silveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\obj\\",
+        "projectPath": "E:\\Code\\Github\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj",
+        "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
+        "outputPath": "E:\\Code\\Github\\BackendTreino\\BackEndTreino\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mateus.silveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,48 +39,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            },
-            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -92,15 +50,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

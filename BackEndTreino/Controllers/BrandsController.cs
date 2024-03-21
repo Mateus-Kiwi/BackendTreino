@@ -9,6 +9,7 @@ using BackEndTreino.Context;
 using BackEndTreino.Models;
 using BackEndTreino.DTOs;
 using AutoMapper;
+using BackEndTreino.Repositories;
 
 namespace BackEndTreino.Controllers
 {
@@ -18,21 +19,22 @@ namespace BackEndTreino.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
+        private readonly IBrandRepo _brandRepo;
 
-        public BrandsController(AppDbContext context, IMapper mapper)
+        public BrandsController(AppDbContext context, IMapper mapper, IBrandRepo brandRepo)
         {
             _context = context;
             _mapper = mapper;
+            _brandRepo = brandRepo;
         }
 
-        // GET: api/Brands
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Brand>>> GetBrand()
         {
-            return await _context.Brands.ToListAsync();
+            var brands = await _brandRepo.GetAll();
+            return Ok(brands);
         }
 
-        // GET: api/Brands/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Brand>> GetBrand(int id)
         {
