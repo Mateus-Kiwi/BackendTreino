@@ -24,7 +24,7 @@ namespace BackEndTreino.Models
         [Required]
         [StringLength(300)]
         public string? ImgUrl { get; set; }
-
+        [ForeignKey(nameof(BrandId))]
         public required int BrandId { get; set; }
         [JsonIgnore]
         public Brand? Brand { get; set; }
@@ -32,7 +32,7 @@ namespace BackEndTreino.Models
         public float Inventory { get; set; }
 
         public DateTime CreatedAt  { get; set; } = DateTime.UtcNow;
-        
+        [ForeignKey(nameof(Category))]
         public required int CategoryId { get; set; }
         [JsonIgnore]
         public Category? Category { get; set; }

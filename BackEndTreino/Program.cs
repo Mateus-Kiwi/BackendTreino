@@ -1,6 +1,7 @@
 using BackEndTreino.Context;
 using BackEndTreino.Extensions;
 using BackEndTreino.Filters;
+using BackEndTreino.IoC;
 using BackEndTreino.Mappings;
 using BackEndTreino.ReposImpl;
 using BackEndTreino.Repositories;
@@ -23,10 +24,9 @@ builder.Services.AddScoped<IBrandRepo, BrandRepo>();
 
 var configuration = builder.Configuration;
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddScoped<ApiLoggingFilter>();
 
+builder.Services.AddScoped<ApiLoggingFilter>();
+builder.Services.AddInfrastructure(configuration);
 
 
 var app = builder.Build();
