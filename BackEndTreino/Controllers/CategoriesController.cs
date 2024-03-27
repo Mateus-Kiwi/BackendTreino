@@ -11,6 +11,7 @@ using BackEndTreino.Filters;
 using BackEndTreino.DTOs;
 using AutoMapper;
 using BackEndTreino.Repositories;
+using BackEndTreino.Interfaces.Base;
 
 namespace BackEndTreino.Controllers
 {
@@ -18,23 +19,21 @@ namespace BackEndTreino.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
+        private readonly ICategoryService _service;
         private readonly AppDbContext _context;
-        private readonly IMapper _mapper;
-        private readonly ICategoryRepo _categoryRepo;
 
-        public CategoriesController(AppDbContext context,  ICategoryRepo categoryRepo, IMapper mapper)
+        public CategoriesController(ICategoryService service, AppDbContext context)
         {
             _context = context;
-            _mapper = mapper; 
-            _categoryRepo = categoryRepo;
+            _service = service;
         }
 
         // GET: api/Categories
         [HttpGet]
         [ServiceFilter(typeof(ApiLoggingFilter))]
-        public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
+        public async Task<ActionResult<IEnumerable<CategoryDTO>>> GetCategories()
         {
-            var categories = await _categoryRepo.GetAll();
+            var categories = await _service.GetAll();
             return Ok(categories);
         }
 
@@ -49,23 +48,23 @@ namespace BackEndTreino.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoryDTO>> GetCategory(int id)
         {
-            var category = await _categoryRepo.GetById(id);
+            var category = await _service.GetById(id);
             return Ok(category);
         }
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCategory(int id, Category category)
+        public async Task<IActionResult> PutCategory(int id, CategoryDTO category)
         {
-            var updatedCategory = await _categoryRepo.Put(id, category);
+            var updatedCategory = await _service.Update(id, category);
             return Ok(updatedCategory);
         }
 
 
         [HttpPost]
-        public async Task<ActionResult<CategoryDTO>> PostCategory(Category category)
+        public async Task<ActionResult<CategoryDTO>> PostCategory(CategoryDTO category)
         {
-            var newCategory = await _categoryRepo.Post(category);  
+            var newCategory = await _service.Post(category);  
             return Ok(newCategory);
         }
 
@@ -73,7 +72,7 @@ namespace BackEndTreino.Controllers
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            await _categoryRepo.Delete(id);
+            await _service.Delete(id);
             return NoContent();
         }
 

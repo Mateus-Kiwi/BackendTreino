@@ -8,6 +8,10 @@ using BackEndTreino.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Text.Json.Serialization;
+using AutoMapper;
+using BackEndTreino.Interfaces.Base;
+using BackEndTreino.Services;
+using BackEndTreino.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +25,9 @@ builder.Services.AddAutoMapper(typeof(DomainToDTO));
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
 builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
 builder.Services.AddScoped<IBrandRepo, BrandRepo>();
+builder.Services.AddScoped<IBrandService, BrandService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var configuration = builder.Configuration;
 
@@ -29,7 +36,7 @@ builder.Services.AddScoped<ApiLoggingFilter>();
 builder.Services.AddInfrastructure(configuration);
 
 
-var app = builder.Build();
+var app = builder.Build(); 
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

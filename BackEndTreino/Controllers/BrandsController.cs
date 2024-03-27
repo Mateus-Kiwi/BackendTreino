@@ -11,6 +11,7 @@ using BackEndTreino.DTOs;
 using AutoMapper;
 using BackEndTreino.Repositories;
 using BackEndTreino.ReposImpl;
+using BackEndTreino.Interfaces.Base;
 
 namespace BackEndTreino.Controllers
 {
@@ -18,49 +19,45 @@ namespace BackEndTreino.Controllers
     [ApiController]
     public class BrandsController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        private readonly IMapper _mapper;
-        private readonly IBrandRepo _brandRepo;
+        private readonly IBrandService _service;
 
-        public BrandsController(AppDbContext context, IMapper mapper, IBrandRepo brandRepo)
+        public BrandsController(IBrandService service)
         {
-            _context = context;
-            _mapper = mapper;
-            _brandRepo = brandRepo;
+            _service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Brand>>> GetBrand()
+        public async Task<ActionResult<IEnumerable<BrandDTO>>> GetBrand()
         {
-            var brands = await _brandRepo.GetAll();
+            var brands = await _service.GetAll();
             return Ok(brands);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Brand>> GetBrand(int id)
+        public async Task<ActionResult<BrandDTO>> GetBrand(int id)
         {
-            var brands = await _brandRepo.GetById(id);
+            var brands = await _service.GetById(id);
             return Ok(brands);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutBrand(int id, Brand brand)
+        public async Task<IActionResult> PutBrand(int id, BrandDTO brand)
         {
-            var updatedProduct = await _brandRepo.Put(id, brand);
+            var updatedProduct = await _service.Update(id, brand);
             return Ok(updatedProduct);
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostBrand(Brand brand)
+        public async Task<IActionResult> PostBrand(BrandDTO brand)
         {
-            var newBrand = await _brandRepo.Post(brand);
+            var newBrand = await _service.Post(brand);
             return Ok(newBrand);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBrand(int id)
         {
-            await _brandRepo.Delete(id);
+            await _service.Delete(id);
             return NoContent();
         }
 

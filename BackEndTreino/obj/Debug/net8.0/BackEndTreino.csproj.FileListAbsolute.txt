@@ -1,3 +1,11 @@
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.csproj.AssemblyReference.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.AssemblyInfoInputs.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.AssemblyInfo.cs
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.csproj.CoreCompileInputs.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.sourcelink.json
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\bin\Debug\net8.0\appsettings.json
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\bin\Debug\net8.0\BackEndTreino.staticwebassets.runtime.json
@@ -230,14 +238,6 @@ C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\bin\Debug\
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\bin\Debug\net8.0\BackEndTreino.Domain.pdb
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\bin\Debug\net8.0\BackEndTreino.Infra.pdb
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\bin\Debug\net8.0\BackEndTreino.IoC.pdb
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.csproj.AssemblyReference.cache
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.AssemblyInfoInputs.cache
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.AssemblyInfo.cs
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.csproj.CoreCompileInputs.cache
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\BackEndTreino.sourcelink.json
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino\obj\Debug\net8.0\staticwebassets\msbuild.BackEndTreino.Microsoft.AspNetCore.StaticWebAssets.props

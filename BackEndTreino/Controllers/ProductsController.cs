@@ -11,6 +11,7 @@ using BackEndTreino.DTOs;
 using AutoMapper;
 using System.Diagnostics;
 using BackEndTreino.Repositories;
+using BackEndTreino.Interfaces;
 
 namespace BackEndTreino.Controllers
 {
@@ -18,50 +19,47 @@ namespace BackEndTreino.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        private readonly IMapper _mapper;
-        private readonly IProductRepo _productRepo;
 
-        public ProductsController(AppDbContext context, IMapper mapper, IProductRepo productRepo)
+        private readonly IProductService _service;
+
+        public ProductsController(IProductService service)
         {
-            _context = context;
-            _mapper = mapper;
-            _productRepo = productRepo;
+            _service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProductsAsync()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductsAsync()
         {
-            var products = await _productRepo.GetAll();
+            var products = await _service.GetAll();
             return Ok(products);
         }
 
         [HttpGet("{id:int}", Name = "ObtainProduct")]
         public async Task<ActionResult<ProductDTO>> GetProductAsync(int id)
         {
-            var product = await _productRepo.GetById(id);
+            var product = await _service.GetById(id);
             return Ok(product);
         }
 
         [HttpPost]
         public async Task<IActionResult> PostProduct(ProductDTO product)
         {
-            var newProduct =  await _productRepo.Post(product);
+            await _service.Post(product);
             return Ok(product);
         }
 
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> PutProduct(int id, Product product)
+        public async Task<IActionResult> PutProduct(int id, ProductDTO product)
         {
-                var updatedProduct = await _productRepo.Put(id, product);
-                return Ok(updatedProduct);
+            var updatedProduct = await _service.Update(id, product);
+            return Ok(updatedProduct);
         }
 
 
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            await _productRepo.Delete(id);
+            await _service.Delete(id);
             return NoContent();
         }
 
