@@ -1,0 +1,6 @@
+@BackEndTreino_HostAddress = http://localhost:5157
+
+GET {{BackEndTreino_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

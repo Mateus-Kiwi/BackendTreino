@@ -1,0 +1,14 @@
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\bin\Debug\net8.0\BackEndTreino.Domain.deps.json
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\bin\Debug\net8.0\BackEndTreino.Domain.runtimeconfig.json
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\bin\Debug\net8.0\BackEndTreino.Domain.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\bin\Debug\net8.0\BackEndTreino.Domain.pdb
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.csproj.AssemblyReference.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.AssemblyInfoInputs.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.AssemblyInfo.cs
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\refint\BackEndTreino.Domain.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.pdb
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.genruntimeconfig.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\ref\BackEndTreino.Domain.dll

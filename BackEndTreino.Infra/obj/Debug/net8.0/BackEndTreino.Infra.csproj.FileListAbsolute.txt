@@ -1,0 +1,17 @@
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\bin\Debug\net8.0\BackEndTreino.Infra.deps.json
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\bin\Debug\net8.0\BackEndTreino.Infra.runtimeconfig.json
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\bin\Debug\net8.0\BackEndTreino.Infra.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\bin\Debug\net8.0\BackEndTreino.Infra.pdb
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\bin\Debug\net8.0\BackEndTreino.Domain.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\bin\Debug\net8.0\BackEndTreino.Domain.pdb
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.csproj.AssemblyReference.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.AssemblyInfoInputs.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.AssemblyInfo.cs
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.csproj.CoreCompileInputs.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.csproj.CopyComplete
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\refint\BackEndTreino.Infra.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.pdb
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\BackEndTreino.Infra.genruntimeconfig.cache
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\obj\Debug\net8.0\ref\BackEndTreino.Infra.dll
