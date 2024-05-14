@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackEndTreino.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+942ca99233ad4b793bfd42c280a9e0a6d2d7e8e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackEndTreino.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackEndTreino.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
