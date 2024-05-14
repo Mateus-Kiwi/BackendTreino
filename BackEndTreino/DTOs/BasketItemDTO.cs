@@ -22,12 +22,12 @@ namespace BackEndTreino.DTOs
         public int Quantity  { get; set; }
         [Required]
        
-        public int Stock  { get; set; }
+        public int Inventory  { get; set; }
         [Required]
         public string ImgUrl { get; set; }  
         [Required]
-        public string Brand { get; set; }
+        public string BrandId { get; set; }
         [Required]
-        public string Type { get; set; }
+        public string CategoryId { get; set; }
     }
 }

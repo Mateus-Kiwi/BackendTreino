@@ -19,3 +19,4 @@ C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.IoC\obj\De
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.IoC\obj\Debug\net8.0\BackEndTreino.IoC.pdb
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.IoC\obj\Debug\net8.0\BackEndTreino.IoC.genruntimeconfig.cache
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.IoC\obj\Debug\net8.0\ref\BackEndTreino.IoC.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.IoC\obj\Debug\net8.0\BackEndTreino.IoC.sourcelink.json

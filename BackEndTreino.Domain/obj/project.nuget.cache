@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PHmoiVCs3vCmZPJb3wfqgnKHP0/XZZSOue2RCok/w72Ao9fFNpmUkljQDFL1AQs7f//6SynogG7jOdTgXBMhqA==",
+  "dgSpecHash": "bQhPoLeQtB6axzozuEHu9LC46+mPcZxZppZeY/D9UVIEd/MrEQHmURE8A8qy0kprlRUB1Rsw/+/B6ir140j6mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj",
+  "projectFilePath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mateus.silveira\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\mateus.silveira\\.nuget\\packages\\firebaseadmin\\3.0.0\\firebaseadmin.3.0.0.nupkg.sha512",

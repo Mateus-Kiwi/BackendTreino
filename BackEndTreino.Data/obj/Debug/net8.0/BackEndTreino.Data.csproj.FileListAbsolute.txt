@@ -17,3 +17,4 @@ C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Data\obj\D
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Data\obj\Debug\net8.0\BackEndTreino.Data.pdb
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Data\obj\Debug\net8.0\BackEndTreino.Data.genruntimeconfig.cache
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Data\obj\Debug\net8.0\ref\BackEndTreino.Data.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Data\obj\Debug\net8.0\BackEndTreino.Data.sourcelink.json

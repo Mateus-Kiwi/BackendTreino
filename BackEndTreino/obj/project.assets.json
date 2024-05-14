@@ -9545,11 +9545,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino\\BackEndTreino.csproj",
+      "projectUniqueName": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj",
       "projectName": "BackEndTreino",
-      "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino\\BackEndTreino.csproj",
+      "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\BackEndTreino.csproj",
       "packagesPath": "C:\\Users\\mateus.silveira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino\\obj\\",
+      "outputPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mateus.silveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9566,17 +9566,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Data\\BackEndTreino.Data.csproj": {
-              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Data\\BackEndTreino.Data.csproj"
+            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Data\\BackEndTreino.Data.csproj": {
+              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Data\\BackEndTreino.Data.csproj"
             },
-            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj": {
-              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj"
+            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj": {
+              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj"
             },
-            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj": {
-              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj"
+            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj": {
+              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj"
             },
-            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.IoC\\BackEndTreino.IoC.csproj": {
-              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.IoC\\BackEndTreino.IoC.csproj"
+            "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.IoC\\BackEndTreino.IoC.csproj": {
+              "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.IoC\\BackEndTreino.IoC.csproj"
             }
           }
         }

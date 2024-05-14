@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BackEndTreino.Infra
-build_property.ProjectDir = C:\Users\mateus.silveira\Documents\GitHub\BackEndTreino\BackEndTreino.Infra\
+build_property.ProjectDir = C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Infra\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

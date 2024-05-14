@@ -69,7 +69,7 @@ namespace BackEndTreino.Infra.Migrations
                     ImgUrl = table.Column<string>(type: "character varying(300)", maxLength: 300, nullable: false),
                     BrandId = table.Column<int>(type: "integer", nullable: false),
                     BrandName = table.Column<string>(type: "text", nullable: true),
-                    Inventory = table.Column<float>(type: "real", nullable: false),
+                    Inventory = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     CategoryId = table.Column<int>(type: "integer", nullable: false),
                     CategoryName = table.Column<string>(type: "text", nullable: true)
@@ -102,7 +102,7 @@ namespace BackEndTreino.Infra.Migrations
                     DeliveryMethodId = table.Column<int>(type: "integer", nullable: false),
                     Subtotal = table.Column<decimal>(type: "numeric", nullable: false),
                     Status = table.Column<int>(type: "integer", nullable: false),
-                    PaymentIntetId = table.Column<string>(type: "text", nullable: false),
+                    PaymentIntentId = table.Column<string>(type: "text", nullable: false),
                     ShipToAddress_City = table.Column<string>(type: "text", nullable: false),
                     ShipToAddress_FirstName = table.Column<string>(type: "text", nullable: false),
                     ShipToAddress_LastName = table.Column<string>(type: "text", nullable: false),

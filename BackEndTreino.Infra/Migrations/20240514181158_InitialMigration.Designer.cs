@@ -13,7 +13,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BackEndTreino.Infra.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240425144940_InitialMigration")]
+    [Migration("20240514181158_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -21,7 +21,7 @@ namespace BackEndTreino.Infra.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -135,8 +135,8 @@ namespace BackEndTreino.Infra.Migrations
                         .HasMaxLength(300)
                         .HasColumnType("character varying(300)");
 
-                    b.Property<float>("Inventory")
-                        .HasColumnType("real");
+                    b.Property<int>("Inventory")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -220,7 +220,7 @@ namespace BackEndTreino.Infra.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("PaymentIntetId")
+                    b.Property<string>("PaymentIntentId")
                         .IsRequired()
                         .HasColumnType("text");
 

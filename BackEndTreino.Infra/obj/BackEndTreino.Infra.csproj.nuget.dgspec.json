@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj": {}
+    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj": {
+    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj",
         "projectName": "BackEndTreino.Domain",
-        "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj",
+        "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj",
         "packagesPath": "C:\\Users\\mateus.silveira\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -125,14 +125,14 @@
         }
       }
     },
-    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj": {
+    "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj",
         "projectName": "BackEndTreino.Infra",
-        "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj",
+        "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Infra\\BackEndTreino.Infra.csproj",
         "packagesPath": "C:\\Users\\mateus.silveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Infra\\obj\\",
+        "outputPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mateus.silveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -149,8 +149,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj": {
-                "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackEndTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj"
+              "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj": {
+                "projectPath": "C:\\Users\\mateus.silveira\\Documents\\GitHub\\BackendTreino\\BackEndTreino.Domain\\BackEndTreino.Domain.csproj"
               }
             }
           }

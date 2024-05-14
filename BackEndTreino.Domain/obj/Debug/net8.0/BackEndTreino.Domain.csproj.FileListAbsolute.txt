@@ -12,3 +12,4 @@ C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.pdb
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.genruntimeconfig.cache
 C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\ref\BackEndTreino.Domain.dll
+C:\Users\mateus.silveira\Documents\GitHub\BackendTreino\BackEndTreino.Domain\obj\Debug\net8.0\BackEndTreino.Domain.sourcelink.json
