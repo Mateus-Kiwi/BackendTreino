@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using BackEndTreino.Domain.Models;
 using Core.Interfaces;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
@@ -13,6 +14,7 @@ namespace BackEndTreino.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors ("CorsPolicy")]
     public class PaymentsController : ControllerBase
     {
         private readonly IPaymentService _payment;

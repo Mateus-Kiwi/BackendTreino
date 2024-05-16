@@ -26,7 +26,7 @@ namespace BackEndTreino.Services
 
         public async Task<Basket> CreateOrUpdatePaymentIntent(string basketId)
         {
-            StripeConfiguration.ApiKey = _config["StripeSettings:SercretKey"];
+            StripeConfiguration.ApiKey = _config["StripeSettings:SecretKey"];
             var basket = await _basketRepo.GetById(basketId);
             var shippingPrice = 10m;
             basket.DeliveryMethodId = 1; 

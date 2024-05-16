@@ -31,7 +31,6 @@ namespace BackEndTreino.Controllers
 
 
         [HttpPut("{id}")]
-        //TALVEZ BUGADO
         public async Task<IActionResult> UpdateBasketAsync(Basket basketDTO)
         {
             var basket = await _service.Update(basketDTO);
@@ -39,10 +38,9 @@ namespace BackEndTreino.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Basket>> UpdateBasket(BasketDTO basket)
+        public async Task<ActionResult<Basket>> UpdateBasket(Basket basket)
         {
-            var customerBasket = _mapper.Map<BasketDTO, Basket>(basket);
-            var uppdatedBasket = await _service.Update(customerBasket);
+            var uppdatedBasket = await _service.Update(basket);
             return Ok(uppdatedBasket);
         }
 

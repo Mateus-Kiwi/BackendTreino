@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackEndTreino.IoC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d21cc717a2be5af25f4e3b43ad0c4f5bec465ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cb512c29b84558d23a6cbebe1945094b1ce5654")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackEndTreino.IoC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackEndTreino.IoC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
