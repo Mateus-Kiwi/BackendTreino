@@ -64,13 +64,13 @@ namespace BackEndTreino.Services
                 order.DeliveryMethod = deliveryMethod;
                 order.Subtotal = subtotal;
                 order.OrderItems = items;
-                _orderRepo.Add(order);
+                _orderRepo.Update(order);
                 return order;
             }
             else
             {
                 order = new Order(items, buyerEmail, shippingAddress, deliveryMethod, subtotal, basket.PaymentIntentId);
-                _orderRepo.Add(order);
+                _orderRepo.Update(order);
             }
 
             var result = await _context.SaveChangesAsync();

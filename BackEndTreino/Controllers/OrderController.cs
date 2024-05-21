@@ -55,9 +55,7 @@ namespace BackEndTreino.Controllers
 
             if (order == null) return BadRequest();
 
-            var order1 = await _service.GetOrderAsync(orderDto.BuyerEmail);
-
-            foreach (var item in order1.OrderItems)
+            foreach (var item in order.OrderItems)
             {
                 var product = await _context.Products.FindAsync(item.ItemOrdered.ProductItemId);
 

@@ -24,6 +24,11 @@ namespace BackEndTreino.Data.ReposImpl
             return await _context.Orders.ToListAsync();
         }
 
+        public void Update(Order order)
+        {
+           _context.Orders.Update(order);
+        }   
+
         public async void Add(Order order)
         {
             await _context.Set<Order>().AddAsync(order);
