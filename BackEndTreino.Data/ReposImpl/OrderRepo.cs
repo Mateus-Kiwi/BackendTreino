@@ -26,8 +26,8 @@ namespace BackEndTreino.Data.ReposImpl
 
         public void Update(Order order)
         {
-           _context.Orders.Update(order);
-        }   
+            _context.Orders.Update(order);
+        }
 
         public async void Add(Order order)
         {
@@ -64,5 +64,13 @@ namespace BackEndTreino.Data.ReposImpl
             return await _context.Orders
                 .FirstOrDefaultAsync(o => o.PaymentIntentId == paymentIntentId);
         }
+
+        public async Task<IReadOnlyList<Order>> GetUsersOrdersAsync(string buyerEmail)
+        {
+            return await _context.Orders
+            .Where(o => o.BuyerEmail == buyerEmail)
+            .ToListAsync();
+        }
+
     }
 }

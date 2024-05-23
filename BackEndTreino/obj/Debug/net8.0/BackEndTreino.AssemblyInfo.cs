@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackEndTreino")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ee25a78b378c1650009935a48e78e14f4c74389")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e4ee7a24d24daae9d8330c384e7bb3ae214d068")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackEndTreino")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackEndTreino")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

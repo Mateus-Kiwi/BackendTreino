@@ -11,9 +11,9 @@ namespace BackEndTreino.Domain.Repositories
     {
         Task<List<Order>> GetAll();
         Task<Order> CreateOrderAsync(string buyerEmail, int deliveryMethod, string basketId, Address shippingAddress);
-        Task<IReadOnlyList<Order>> GetOrdersForUserAsync(string buyerEmail);
         Task<OrderDto> GetOrderByIdAsync(int id);
         Task<IReadOnlyList<DeliveryMethod>> GetDeliveryMethodsAsync();
         Task<Order> GetOrderAsync(string buyerEmail);
+        Task<IReadOnlyList<Order>> GetUsersOrdersAsync(string buyerEmail);
     }
 }

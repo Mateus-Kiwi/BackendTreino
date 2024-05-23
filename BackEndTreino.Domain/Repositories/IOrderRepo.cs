@@ -14,6 +14,7 @@ namespace BackEndTreino.Domain.Repositories
         void Add(Order order);
         Task<Order> Post(Order order);
         Task<Order> GetOrderAsync(string buyerEmail);
+        Task<IReadOnlyList<Order>> GetUsersOrdersAsync(string buyerEmail);
         Task<Order> GetByPayId(string paymentIntentId);
         Task<Order> GetById(int? id);
     }

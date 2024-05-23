@@ -36,6 +36,12 @@ namespace BackEndTreino.Controllers
             if (orders == null) return NotFound("No orders were found.");
             return Ok(orders);
         }
+        [HttpGet("email/{buyerEmail}")]
+        public async Task<ActionResult<IReadOnlyList<Order>>> GetUsersOrders(string buyerEmail)
+        {
+            var orders = await _service.GetUsersOrdersAsync(buyerEmail);
+            return Ok(orders);
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOrderByIdAsync(int id)

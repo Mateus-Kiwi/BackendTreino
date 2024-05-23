@@ -101,9 +101,9 @@ namespace BackEndTreino.Services
             return _mapper.Map<OrderDto>(orderById);
         }
 
-        public Task<IReadOnlyList<Order>> GetOrdersForUserAsync(string buyerEmail)
+        async Task<IReadOnlyList<Order>> IOrderService.GetUsersOrdersAsync(string buyerEmail)
         {
-            throw new NotImplementedException();
+            return await _orderRepo.GetUsersOrdersAsync(buyerEmail);
         }
     }
 }
